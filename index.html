@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Talk Room</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- コンテンツ表示画面 -->
+    <div> 名前：<input type="text" id="uname"> </div>
+    <div　id="room_set"> トークルーム：</div>
+
+    <div class="screen">
+        <div class="room">トークルーム名</div>
+        <div id="output"></div>
+        <div>
+         <div class="input">
+            <textarea id="text" cols="60" rows="1"></textarea>
+            <button id="send">送信</button>
+        </div>
+    </div>
+    </div>
+    <!--/ コンテンツ表示画面 -->
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="./js/line.js"></script>
+</body>
+</html>

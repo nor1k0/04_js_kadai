@@ -1,0 +1,67 @@
+@charset "utf8";
+.screen{
+    width:800px;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+.room{
+    text-align: center;
+    background-color:  #273246;
+    padding: 10px;
+    text-align: center;
+    font-size: 150%;
+    color: #ffffff;
+}
+
+#output {
+    background: #7494c0;    /* LINEトークルーム背景色 */
+    font-size: 80%;
+    height: 750px;
+    overflow: scroll;
+}
+
+.box {
+    display: flex;
+  }
+  
+   /* 偶数のみrow-reverseする */
+  .box:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  
+  
+  /* // 幅を40%に設定する */
+  .box-inner {
+    width: 40%;
+  }
+  
+  /* // 同じ記述をまとめる */
+  .date,
+  .name,
+  .msg {
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 11px;
+    margin-right: 4px;
+  }
+  
+  /* // msgだけ背景色を設定 */
+  .msg {
+    background: #8de055;
+  }
+
+  .msg:nth-child(even) {
+    background: #ffffff;
+  }
+
+.input{
+display: flex;
+justify-content: space-evenly
+  }
+
+#text{
+    width: 75%;
+}
+
